@@ -1,0 +1,82 @@
+body{
+font-family: Century Gothic;
+}
+
+.Content{
+    width: 900px;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+svg{
+    width: 30px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+
+.leftnotify{
+    display: flex;
+    justify-content: right; /*justify content flytter på innhold på bpksen og derfor må være på boksen rundt, vi lagde denne nye diven for å flytte den røde span til høyre.  */
+    width: 120%;
+}
+
+
+span{
+    display: block;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute; /*dette gjør at position på denne diven kan gå over en annen div, hvis den ikke hadde det ville den bare vært ved siden, under eller på topen men aldri selve over.
+    med dette kan du lage en enkelt organisert layout for nettsiden ved å tenke på den som rutenett. */
+    top: 40px;
+    margin-right: auto;
+}
+
+.ListProdukt .item img{
+   width: 90%;
+   filter: drop-shadow(0 50px 70px);
+}
+
+.ListProdukt{
+    display: grid; /*det den gjør, er at den lager et usynlig rutenett bakgrunn på nettsiden, disse rutene består av rader og kolloner.*/
+    grid-template-columns: repeat(4, 1fr); /*dette er for å beskrive bredden på hver kolonne, her kan du se at jeg har brukt 2 kolonner. første kolonne tar 1 frakjson (en del av noe), mens den andre tar 2 kolonner. */
+    gap: 20px;
+}
+
+.ListProdukt .item{
+    background-color: bisque;
+    padding: 20px; /*legger til ekstra space inni elementen eller boksen,
+    for eksempel hvis du har en boks og du legger til padding 10px, betyr
+    det at vil være 10 ekstra piksler på alle sider.*/
+    border-radius: 20px;
+}
+
+.ListProdukt .item h2{
+    font-size: large;
+}
+
+.ListProdukt .item .Pris{
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+.ListProdukt .item .LeggKurv{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+}
