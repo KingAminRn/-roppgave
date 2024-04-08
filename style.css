@@ -1,16 +1,16 @@
-body{
-font-family: Century Gothic;
-margin: 0;
+body {
+    font-family: Century Gothic;
+    margin: 0;
 }
 
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   }
+}
 
-   .Navbar2{
+.Navbar2 {
     background-color: black;
     width: 100%;
     height: 70px;
@@ -18,78 +18,80 @@ header{
     flex-direction: row;
     gap: 2.5%;
     padding: 1%;
-   }
+}
 
-   .Navbar2 h3{
+.Navbar2 h3 {
     color: white;
     font-size: 1.5rem;
-    
-   
-   }
 
-   .Navbar2 img {
+
+}
+
+.Navbar2 img {
     width: 9vh;
     margin-left: 30px;
-   }
+}
 
-   .Navbar{
+.Navbar {
     background-color: black;
     width: 100%;
-   }
+}
 
-   .Navbar h3{
+.Navbar h3 {
     color: white;
-   }
+}
 
 
-.Content{
+.Content {
     width: 900px;
     max-width: 90vw;
     margin: auto;
     text-align: center;
     padding-top: 10px;
 }
-.Content2 { 
+
+.Content2 {
     display: flex;
     flex-direction: column;
     justify-content: right;
 
 }
 
-.BigContent2{
-display: flex;
-justify-content: center;
-gap: 8%;
-margin-top: 8%;
+.BigContent2 {
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    margin-top: 8%;
 }
 
 .ButtonsContent2 {
     display: flex;
     gap: 30%;
-   
+
 }
 
-.Content2 button{
+.Content2 button {
     width: 20vh;
     height: 7vh;
 }
 
 
 
-svg{
+svg {
     width: 30px;
 }
 
 
 
-.leftnotify{
+.leftnotify {
     display: flex;
-    justify-content: right; /*justify content flytter på innhold på bpksen og derfor må være på boksen rundt, vi lagde denne nye diven for å flytte den røde span til høyre.  */
+    justify-content: right;
+    /*justify content flytter på innhold på bpksen og derfor må være på boksen rundt, vi lagde denne nye diven for å flytte den røde span til høyre.  */
     width: 120%;
 }
 
 
-span{
+.dot {
     display: block;
     background-color: red;
     width: 20px;
@@ -98,50 +100,65 @@ span{
     align-items: center;
     color: white;
     border-radius: 50%;
-    position: absolute; /*dette gjør at position på denne diven kan gå over en annen div, hvis den ikke hadde det ville den bare vært ved siden, under eller på topen men aldri selve over.
+    position: absolute;
+    /*dette gjør at position på denne diven kan gå over en annen div, hvis den ikke hadde det ville den bare vært ved siden, under eller på topen men aldri selve over.
     med dette kan du lage en enkelt organisert layout for nettsiden ved å tenke på den som rutenett. */
     top: 40px;
     margin-right: auto;
 }
 
-.ProduktRow .item img{
-   width: 20vh;
-   filter: drop-shadow(0 50px 70px);
-   height: 21vh;
+.ProduktPris2 h3{
+    font-size: 2rem;
 }
 
-.ProduktRow{
-    display: grid; /*det den gjør, er at den lager et usynlig rutenett bakgrunn på nettsiden, disse rutene består av rader og kolloner.*/
-    grid-template-columns: repeat(4, 1fr); /*dette er for å beskrive bredden på hver kolonne, her kan du se at jeg har brukt 2 kolonner. første kolonne tar 1 frakjson (en del av noe), mens den andre tar 2 kolonner. */
+.rabatt {
+    text-decoration: line-through;
+    font-size: 1.5rem;
+}
+
+.ProduktRow .item img {
+    width: 20vh;
+    filter: drop-shadow(0 50px 70px);
+    height: 21vh;
+}
+
+.ProduktRow {
+    display: grid;
+    /*det den gjør, er at den lager et usynlig rutenett bakgrunn på nettsiden, disse rutene består av rader og kolloner.*/
+    grid-template-columns: repeat(4, 1fr);
+    /*dette er for å beskrive bredden på hver kolonne, her kan du se at jeg har brukt 2 kolonner. første kolonne tar 1 frakjson (en del av noe), mens den andre tar 2 kolonner. */
     gap: 5%;
     margin-bottom: 20px;
-    
+
 }
 
-.ProduktRow .item{
+.ProduktRow .item {
     background-color: bisque;
-    padding: 20px; /*legger til ekstra space inni elementen eller boksen,
+    padding: 20px;
+    /*legger til ekstra space inni elementen eller boksen,
     for eksempel hvis du har en boks og du legger til padding 10px, betyr
     det at vil være 10 ekstra piksler på alle sider.*/
     border-radius: 20px;
 }
 
 .ProduktRow .item:hover {
-    filter: drop-shadow(5px 5px 50px);
+    filter: drop-shadow(5px 5px 5px);
     transform: scale(1.05);
     transition: 0.3s;
 }
 
-.ProduktRow .item h2{
+
+
+.ProduktRow .item h2 {
     font-size: large;
 }
 
-.ProduktRow .item .Pris{
+.ProduktRow .item .Pris {
     letter-spacing: 7px;
     font-size: small;
 }
 
-.ProduktRow .item .LeggKurv{
+.ProduktRow .item .LeggKurv {
     background-color: black;
     color: white;
     padding: 5px 10px;
@@ -151,8 +168,26 @@ span{
     cursor: pointer;
 }
 
-.ProduktInfo{
+.ProduktInfo {
     border: 2.5px solid;
     padding: 1%;
     border-radius: 7px;
+}
+
+.ProductButton button {
+    margin-top: 4vh;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.ProductButtonWhite button {
+    margin-top: 4vh;
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.ProduktNavn2 {
+    font-size: 1.5rem;
 }
