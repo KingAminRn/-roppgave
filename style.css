@@ -1,9 +1,11 @@
+/* Vanlig CSS */
 body {
     font-family: Century Gothic;
     margin: 0;
+    overflow-x: hidden;
 }
 
-
+/* Navbar og header */
 header {
     display: flex;
     align-items: center;
@@ -41,7 +43,26 @@ header {
     color: white;
 }
 
+.logo {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
 
+.NavbarText {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    
+}
+
+.Navbar2 {
+    display: flex;
+   justify-content: start;
+   gap: 300px;
+}
+
+/* Content */
 .Content {
     width: 900px;
     max-width: 90vw;
@@ -64,10 +85,29 @@ header {
     margin-top: 8%;
 }
 
+.BildeContent2 {
+    position: relative;
+}
+
+.Salg {
+    position: absolute;
+    text-align: center;
+    top: -50px;
+    right: 16px;
+    background-color: black;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+    width: 100px;
+}
+
 .ButtonsContent2 {
     display: flex;
     gap: 30%;
+}
 
+.ButtonsContent2 button {
+    border-radius: 10px;
 }
 
 .Content2 button {
@@ -107,7 +147,8 @@ svg {
     margin-right: auto;
 }
 
-.ProduktPris2 h3{
+/* Produkter */
+.ProduktPris2 h3 {
     font-size: 2rem;
 }
 
@@ -176,18 +217,68 @@ svg {
 
 .ProductButton button {
     margin-top: 4vh;
-    background-color: black;
-    color: white;
-    font-size: 1.2rem;
-}
-
-.ProductButtonWhite button {
-    margin-top: 4vh;
     background-color: white;
     color: black;
     font-size: 1.2rem;
 }
 
+.ProductButtonWhite button {
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+    height: 25px;
+    width: 80px;
+}
+
 .ProduktNavn2 {
     font-size: 1.5rem;
+}
+
+.ProductButtonWhite :hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.ProductButton :hover {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.ProductButtonWhite input {
+    height: 40px;
+    border-radius: 9px;
+    margin-top: 4vh;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.column1 {
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+    margin-top: 2%;
+    margin-left: 40px;
+}
+
+.column2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    margin-top: 2%;
 }
