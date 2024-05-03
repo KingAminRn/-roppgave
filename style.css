@@ -8,8 +8,6 @@ body {
 /* Navbar og header */
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .Navbar2 {
@@ -53,16 +51,29 @@ header {
     display: flex;
     justify-content: center;
     gap: 90px;
-    
+
 }
 
 .Navbar2 {
     display: flex;
-   justify-content: start;
-   gap: 300px;
+    justify-content: start;
+    gap: 300px;
 }
 
+.Navbar2 a {
+    text-decoration: none;
+}
+
+
+
 /* Content */
+
+.Title {
+    font-size: 1.9rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-left: 360px;
+}
 .Content {
     width: 900px;
     max-width: 90vw;
@@ -87,6 +98,11 @@ header {
 
 .BildeContent2 {
     position: relative;
+}
+
+.BildeContent2 img {
+    height: 400px;
+    width: 400px;
 }
 
 .Salg {
@@ -131,21 +147,7 @@ svg {
 }
 
 
-.dot {
-    display: block;
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 50%;
-    position: absolute;
-    /*dette gjør at position på denne diven kan gå over en annen div, hvis den ikke hadde det ville den bare vært ved siden, under eller på topen men aldri selve over.
-    med dette kan du lage en enkelt organisert layout for nettsiden ved å tenke på den som rutenett. */
-    top: 40px;
-    margin-right: auto;
-}
+
 
 /* Produkter */
 .ProduktPris2 h3 {
@@ -157,11 +159,28 @@ svg {
     font-size: 1.5rem;
 }
 
+.produkter {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    
+}
+
+#Ad2 {
+    height: 50%;
+    width: 40%;
+   border: solid;  
+   border-radius: 10px;
+   margin-top: 65px;
+   margin-left: 70px;
+}
+
 .ProduktRow .item img {
     width: 20vh;
     filter: drop-shadow(0 50px 70px);
     height: 21vh;
 }
+
 
 .ProduktRow {
     display: grid;
@@ -174,7 +193,7 @@ svg {
 }
 
 .ProduktRow .item {
-    background-color: bisque;
+    background-color: #ffe5c4;
     padding: 20px;
     /*legger til ekstra space inni elementen eller boksen,
     for eksempel hvis du har en boks og du legger til padding 10px, betyr
@@ -206,8 +225,15 @@ svg {
     border-radius: 20px;
     margin-top: 10px;
     border: none;
+    text-decoration: none;
+    font-size: 1rem;
+    display: inline-block;
+    /* Gjør at den oppfører seg som både en blokk og en linje, for eksempel med a-tag så puttet vi dem i samme linje som produktrow. */
+}
+.item button:hover {
     cursor: pointer;
 }
+
 
 .ProduktInfo {
     border: 2.5px solid;
@@ -264,6 +290,7 @@ svg {
 }
 
 .footer a {
+    margin-left: 15%;
     text-decoration: none;
     color: white;
 }
@@ -273,7 +300,7 @@ svg {
     flex-direction: column;
     gap: 7%;
     margin-top: 2%;
-    margin-left: 40px;
+    margin-left: 10%;
 }
 
 .column2 {
