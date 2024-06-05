@@ -446,3 +446,13 @@ svg {
     flex-direction: row;
     align-items: space-between;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    .Content {
+        background-color: yellow;
+        font-size: 200%;
+    }
+  }
