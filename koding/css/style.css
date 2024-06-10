@@ -149,7 +149,9 @@ svg {
 .leftnotify {
     display: flex;
     justify-content: right;
-    /*justify content flytter på innhold på bpksen og derfor må være på boksen rundt, vi lagde denne nye diven for å flytte den røde span til høyre.  */
+    /*justify content flytter på innhold på bpksen og derfor må være på boksen rundt, 
+    vi lagde denne nye diven for å flytte den røde span til høyre.  */
+
     width: 120%;
 }
 
@@ -191,9 +193,14 @@ svg {
 
 .ProduktRow {
     display: grid;
-    /*det den gjør, er at den lager et usynlig rutenett bakgrunn på nettsiden, disse rutene består av rader og kolloner.*/
+    /*det den gjør, er at den lager et usynlig rutenett bakgrunn på nettsiden,
+     disse rutene består av rader og kolloner.*/
+
     grid-template-columns: repeat(4, 1fr);
-    /*dette er for å beskrive bredden på hver kolonne, her kan du se at jeg har brukt 2 kolonner. første kolonne tar 1 frakjson (en del av noe), mens den andre tar 2 kolonner. */
+    /*dette er for å beskrive bredden på hver kolonne,
+     her kan du se at jeg har brukt 2 kolonner. 
+    første kolonne tar 1 frakjson (en del av noe),
+     mens den andre tar 2 kolonner. */
     gap: 5%;
     margin-bottom: 20px;
 
@@ -328,7 +335,7 @@ svg {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
+
 }
 
 .Sum button {
@@ -342,7 +349,7 @@ svg {
     font-size: 1rem;
     display: inline-block;
     cursor: pointer;
-    
+
 }
 
 .Betaling {
@@ -350,10 +357,10 @@ svg {
     justify-content: right;
     margin-top: 70px;
     flex-direction: column;
-     
+
 }
 
-.Betalingsmåte{
+.Betalingsmåte {
     border: solid 2px;
     margin-top: 10px;
     border-radius: 5px;
@@ -364,7 +371,7 @@ svg {
 
 }
 
-.Betalingsmåte button{
+.Betalingsmåte button {
     width: 250px;
     height: 50px;
     border: none;
@@ -376,7 +383,7 @@ svg {
 
 }
 
-.Info{
+.Info {
     border: solid 2px;
     height: 31vh;
     border-radius: 5px;
@@ -384,30 +391,30 @@ svg {
     margin-left: 70px;
 }
 
-.Info h1{
+.Info h1 {
     margin-left: 100px;
 }
 
 
-.Info h2{
+.Info h2 {
     border: solid;
     margin-left: 55px;
     width: 184px;
     border-radius: 5px;
 }
 
-.Info h3{
-   margin-left: 80px;
+.Info h3 {
+    margin-left: 80px;
     width: 180px;
     border-radius: 5px;
 }
 
-.Info input{
+.Info input {
     margin-left: 55px;
     width: 180px;
     border-radius: 5px;
     height: 40px;
-   
+
 }
 
 .footer {
@@ -441,18 +448,216 @@ svg {
     gap: 5%;
     margin-top: 2%;
 }
+
 .container {
     display: flex;
     flex-direction: row;
-    align-items: space-between;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+/* Media query for mobil */
+
+@media (max-width: 600px) {  
+    
+    /*En media query er en måte
+     å få en nettside til å tilpasse seg forskjellige skjermstørrelser.*/
+
+     /*Bruk stilene inne i denne blokken kun hvis skjermen er 600 piksler bred eller mindre.*/
+
+
+    /*Navbar*/
+
+    .Navbar2 {
+        background-color: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 10px;
     }
+
+    .logo{
+        background-color: rgb(0, 0, 0);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        gap: 10px;
+        width: 100vw;
+    }
+
+    .Navbar2 img {
+        margin-left: 0;
+    }
+
+    .Navbar2 a {
+        background-color: black;
+        width: 250px;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        font-family: Century Gothic;
+        justify-content: center;
+    }
+
+    .NavbarText {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 20px;
+    }
+
+    header {
+        justify-content: center;
+    }
+
+    .header h2 {
+        justify-content: center;
+    }
+
+    /*Navbar*/
+
+
+    /*Content*/
+
+    .Title {
+        margin-left: 0;
+        text-align: center;
+    }
+
     .Content {
-        background-color: yellow;
-        font-size: 200%;
+        width: 100%;
+        padding: 10px;
     }
-  }
+
+    .BigContent2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .BildeContent2 img {
+        height: auto;
+        width: 100%;
+    }
+
+    .ButtonsContent2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+     /*Content*/
+
+
+      /*Produkter*/
+
+    .produkter {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .ProduktRow {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    #Ad2 {
+        width: 60%;
+        margin: 20px auto;
+    }
+
+    .Sum {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ProduktNavn2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ProduktPris2{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ProductButtonWhite {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .ProductButton{
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .Salg{
+        margin-top: 30px;
+    }
+
+    
+     /*Produkter*/
+
+    .footer {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer a {
+        margin-left: 0;
+    }
+
+    .column1,
+    .column2 {
+        margin: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .Kasse {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .Sum {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .Betaling {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+
+    .Info,
+    .Betalingsmåte {
+        width: 100%;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .Info input {
+        margin-left: 0;
+    }
+
+    .Info h1,
+    .Info h2,
+    .Info h3 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .Betalingsmåte button {
+        width: 80%;
+    }
+
+}
