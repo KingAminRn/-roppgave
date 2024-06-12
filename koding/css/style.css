@@ -299,7 +299,7 @@ svg {
     border-radius: 8px;
     width: 89%;
     margin-top: 70px;
-    border-bottom: none;
+
 }
 
 .Kasse h1 {
@@ -309,8 +309,8 @@ svg {
 .Kasse img {
     border: solid 2px;
     border-radius: 9px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    /* margin-left: 20px;
+    margin-bottom: 20px; */
 }
 
 .KasseTop {
@@ -456,15 +456,19 @@ svg {
 
 /* Media query for mobil */
 
-@media (max-width: 600px) {  
-    
+@media (max-width: 600px) {
+
     /*En media query er en måte
      å få en nettside til å tilpasse seg forskjellige skjermstørrelser.*/
 
-     /*Bruk stilene inne i denne blokken kun hvis skjermen er 600 piksler bred eller mindre.*/
+    /*Bruk stilene inne i denne blokken kun hvis skjermen er 600 piksler bred eller mindre.*/
 
 
     /*Navbar*/
+
+    #Ad2 {
+        height: 70vh;
+    }
 
     .Navbar2 {
         background-color: white;
@@ -475,9 +479,9 @@ svg {
         gap: 10px;
     }
 
-    .logo{
+    .logo {
         background-color: rgb(0, 0, 0);
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         height: auto;
@@ -503,6 +507,10 @@ svg {
 
     .NavbarText {
         flex-direction: column;
+        /*flex-direction: column gjør at elementene i en beholder
+         (container) plasseres oppå hverandre,
+          som en kolonne.*/
+
         gap: 10px;
         padding-top: 20px;
     }
@@ -537,6 +545,7 @@ svg {
 
     .BildeContent2 img {
         height: auto;
+        /*gjør at et element blir så høyt som nødvendig for å passe innholdet, som er 600px.*/
         width: 100%;
     }
 
@@ -545,10 +554,10 @@ svg {
         gap: 10px;
     }
 
-     /*Content*/
+    /*Content*/
 
 
-      /*Produkter*/
+    /*Produkter*/
 
     .produkter {
         flex-direction: column;
@@ -558,25 +567,32 @@ svg {
 
     .ProduktRow {
         grid-template-columns: 1fr;
+        /*Bestemmer antall og størrelsen på kolonner i en grid-container.
+        1fr: Står for "1 fraction" og betyr at kolonnen tar opp all tilgjengelig plass.*/
         gap: 35px;
     }
 
     #Ad2 {
         width: 60%;
         margin: 20px auto;
+        /*20px: Setter en margin på 20 piksler på toppen og bunnen av elementet.
+        auto: Setter automatisk margin på venstre og høyre side,
+         noe som gjør at elementet blir sentrert horisontalt i diven min.*/
     }
 
     .Sum {
         flex-direction: column;
         align-items: stretch;
+        /*stretch: Gjør at elementene eller koden strekker seg for å fylle hele høyden på diven.
+        Dette betyr at elementene i diven vil strekke seg vertikalt for å fylle opp hele høyden på diven!*/
     }
 
-    .ProduktNavn2{
+    .ProduktNavn2 {
         display: flex;
         justify-content: center;
     }
 
-    .ProduktPris2{
+    .ProduktPris2 {
         display: flex;
         justify-content: center;
     }
@@ -587,19 +603,19 @@ svg {
         flex-direction: column;
     }
 
-    .ProductButton{
+    .ProductButton {
         display: flex;
         justify-content: center;
     }
 
 
 
-    .Salg{
+    .Salg {
         margin-top: 30px;
     }
 
-    
-     /*Produkter*/
+
+    /*Produkter*/
 
     .footer {
         flex-direction: column;
@@ -654,10 +670,42 @@ svg {
     .Info h3 {
         text-align: center;
         margin-left: 0;
+
+
+    }
+
+    .Info {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .Betalingsmåte button {
         width: 80%;
+    }
+
+    .KasseInfo {
+        display: none;
+    }
+
+    .KasseTop img {
+        display: flex;
+        justify-content: center;
+        border: none;
+    }
+
+
+
+    .Kasse h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Sum {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 
 }
