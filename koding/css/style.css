@@ -20,11 +20,11 @@ header {
     padding: 1%;
 }
 
-.Navbar2 h3 {
+
+
+.Navbar h3, .Navbar2 h3 {
     color: white;
     font-size: 1.5rem;
-
-
 }
 
 .Navbar2 img {
@@ -271,21 +271,25 @@ svg {
     width: 80px;
 }
 
+
+
 .ProduktNavn2 {
     font-size: 1.5rem;
 }
 
-.ProductButtonWhite :hover {
+
+.ProductButtonWhite button, .ProductButton button {
+    background-color: white;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.ProductButtonWhite :hover, .ProductButton :hover {
     background-color: black;
     color: white;
     transition: 0.2s;
 }
 
-.ProductButton :hover {
-    background-color: black;
-    color: white;
-    transition: 0.2s;
-}
 
 .ProductButtonWhite input {
     height: 40px;
@@ -434,18 +438,10 @@ svg {
     color: white;
 }
 
-.column1 {
+.column1, .column2 {
     display: flex;
     flex-direction: column;
     gap: 7%;
-    margin-top: 2%;
-    margin-left: 10%;
-}
-
-.column2 {
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
     margin-top: 2%;
 }
 
